@@ -25,10 +25,10 @@ module Document
 end
 
 class Book
-  include Document
   include Printable
+  include Document
 end
 
-# b = Book.new
-# b.print_to_screen
-puts Book.ancestors
+b = Book.new
+b.print_to_screen
+# puts Book.ancestors
